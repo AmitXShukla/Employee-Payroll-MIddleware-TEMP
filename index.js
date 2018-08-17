@@ -47,4 +47,4 @@ app.use('/alivetracking', graphqlHTTP({
     graphiql: false
 }));
 app.use('/', (req, res) => res.send("Welcome ElishERP User"));
-app.listen(process.env.GRAPHQLPORT, () => console.log('Elish Enterprise Server is ready on localhost:' + process.env.GRAPHQLPORT));
+app.listen(process.env.PORT, () => console.log('Elish Enterprise Server is ready on localhost:' + process.env.GRAPHQLPORT));
