@@ -10,7 +10,7 @@ schema = require('./schema/mongoDBSchema'); // uncomment this for MONGODB
 // ****** Set up default mongoose connection START ****** //
 //const mongoose = require('mongoose');
 var mongoDB = process.env.mongoDBMLABURL; // cloud hosted MongoDB
-var mongoDB = process.env.mongoDBLocalURL; // locally hosted MongoDB
+//var mongoDB = process.env.mongoDBLocalURL; // locally hosted MongoDB
 mongoose.connect(mongoDB);
 
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
